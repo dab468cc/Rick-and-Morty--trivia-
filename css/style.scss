@@ -1,0 +1,116 @@
+
+body{
+    width: 90vw;
+    margin: auto;
+    align-self: center;
+    background-color: gray;
+    text-align: center
+}
+// HEADER
+.nav{ 
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    & div.logo{
+        display: flex;
+        flex-direction: row;
+        background-color: green;
+    }
+    & ul.indices{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        margin: auto;
+        padding: 10px;
+        & li.indice{
+            text-decoration: none;
+            color: white;
+            margin: 7px;
+            padding: 3px;
+            & a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// CARRUSEL
+.carrusel{
+    width: 70vw;
+    height: 500px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: blue;
+    padding: 10px;
+    & div.swiper{
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        background-color: green;
+
+    }
+    & div.texto{
+        width: 400px;
+        margin: auto;
+        text-align: center;
+        
+    }
+}
+.registro{
+    & form{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: auto;
+    }& label{
+        text-align: start;
+        margin-bottom: 3px;
+    }& input.boton{
+        margin-top: 15px;
+    }
+}
+
+// TABLA
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+// FOOTER
+  footer{
+    background-color: red;
+    p{
+       display: flex;
+       justify-content: center;
+       padding-top: 5px;
+       margin-bottom:1px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        
+        li{
+            margin:5px;
+            i{
+                color: black;
+            }
+            
+            
+            
+        }
+    }
+}

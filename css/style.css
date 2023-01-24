@@ -1,0 +1,108 @@
+body {
+  width: 90vw;
+  margin: auto;
+  align-self: center;
+  background-color: gray;
+  text-align: center;
+}
+
+.nav {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  margin-top: 7px;
+}
+.nav div.logo {
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+}
+.nav ul.indices {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin: auto;
+  padding: 10px;
+}
+.nav ul.indices li.indice {
+  text-decoration: none;
+  color: white;
+  margin: 7px;
+  padding: 3px;
+}
+.nav ul.indices li.indice a {
+  text-decoration: none;
+}
+
+.carrusel {
+  width: 70vw;
+  height: 500px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+.carrusel div.swiper {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  background-color: green;
+}
+.carrusel div.texto {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.registro form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+}
+.registro label {
+  text-align: start;
+  margin-bottom: 3px;
+}
+.registro input.boton {
+  margin-top: 15px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+footer {
+  background-color: red;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  margin-bottom: 1px;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+footer ul li {
+  margin: 5px;
+}
+footer ul li i {
+  color: black;
+}/*# sourceMappingURL=style.css.map */
