@@ -4,34 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/media/D4d_gPfXkAEE7-X.png">
     <script src="https://kit.fontawesome.com/90d688e9d5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <title>RICK AND MORTY -TRIVIA-</title>
 </head>
 <body>
     <header class="nav">
-        <div class="logo"><img src="logo" alt="logo">
-        <h1 class="titulo">pgName</h1>
+        <div class="logo">
+          <img src="https://pbs.twimg.com/media/D4d_gPfXkAEE7-X.png" alt="">
+          <h1 class="titulo">RICK AND MORTY -TRIVIA-</h1>
         </div>
-        <ul class="indices">
+        <!-- <ul class="indices">
             <li class="indice">
-                <a href="">PUNTUACIONES</a>
+                <a href="#puntuaciones">PUNTUACIONES</a>
             </li>
             <li class="indice">
-                <a href="">TRIVIA</a>
+                <a href="./nav/preguntas.html">TRIVIA</a>
             </li>
-        </ul>   
+        </ul>    -->
     </header>
     <!-- CARRUSEL -->
     <div class="carrusel">
         <!--swiper -->
-        <div class="swiper">
-
+        <div class="QA">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </div>
         <div class="texto">
             <p>El objetivo de esta paguina es realizar una trivia de rick and morty para que demuestres que tan fan eres de la serie y que tan bueno eres recordando cosas, mayormente cosas raras.
             </p>
-            <h4>SUERTE</h4>
+            <h4>!SUERTE¡</h4>
         </div>
     </div>
 
@@ -44,13 +79,13 @@
         <form action="">
             <label for="">Name:</label>
             <input type="text" placeholder="Rick Sanchez">
-            <input type="submit" value="COMENZAR" class="boton">
+            <a href="./nav/preguntas.html">COMENZAR</a>
             
         </form>
 
     </div>
     <!-- TABLA -->
-    <div class="tabla">
+    <div class="tabla" id="puntuaciones">
         <h2>PUNTUACIONES</h2>
         <div class="grid">
             <table>
@@ -99,7 +134,7 @@
 <!-- FOOTER -->
     <footer>
         <div>
-            <p>//Paguina craeda por Daniel Beltran//</p>
+            <p>//Pagina craeda por Daniel Beltran//</p>
             <ul class="foolist">
                 <li class="fooItem">
                     <a href="">
@@ -118,7 +153,8 @@
                 </li>
             </ul>
         </div>
-        
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
