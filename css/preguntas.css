@@ -34,6 +34,12 @@ body {
   margin-top: 40px;
 }
 
+div.datos {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+}
+
 .cntPreguntas {
   background-color: blue;
   border-style: outset;
