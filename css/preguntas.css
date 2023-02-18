@@ -38,6 +38,19 @@ div.datos {
   display: flex;
   flex-direction: row;
   background-color: red;
+  width: 55vw;
+  margin: 10px auto;
+  padding: 7px;
+  justify-content: center;
+}
+div.datos div {
+  margin: 5px;
+}
+div.datos button {
+  margin-left: 100px;
+}
+div.datos button a {
+  text-decoration: none;
 }
 
 .cntPreguntas {

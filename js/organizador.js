@@ -1,8 +1,10 @@
 // USUSARIO
 let jugadores=[]
-console.log(jugadores)
+
+if(!localStorage.getItem('usuarios')){
+    localStorage.setItem('usuarios',JSON.stringify(jugadores))
+}
 jugadores=JSON.parse(localStorage.getItem('usuarios'))
-console.log(jugadores)
 
 class jugadorManager {
     constructor(nombre,puntos){
@@ -15,16 +17,14 @@ class jugadorManager {
 function crearJugador(nombre,puntos){
     let jugador= new jugadorManager(nombre,puntos)
     jugadores.push(jugador)
-    console.log(jugadores)
     localStorage.setItem('usuarios',JSON.stringify(jugadores))
 }
 let nombre=localStorage.getItem('usuario')
 
-console.log(nombre)
 //-------------- randomizador ------------
 let nRandom=0
 function random(){
-    nRandom = Math.random()*(10-1)+1
+    nRandom = Math.random()*(18-1)+1
     nRandom=parseInt(nRandom)
     return nRandom
 }
@@ -68,16 +68,12 @@ function validarPregunta(array){
         bottonNo=true
         bottonSi=false
     }
-    console.log(bottonSi)
-    console.log(bottonNo)
-    console.log(estado)
     document.getElementById("opcionSi").addEventListener("click",validarRespuestaSi)
     document.getElementById("opcionNo").addEventListener("click",validarRespuestaNo)  
 }
 // PUNTOS
 let puntos=accP
 function mostarPuntos(){
-    console.log(puntos)
     const contenedorPuntos=document.querySelector('#contPuntos')
     contenedorPuntos.innerHTML=`
     Puntos:${puntos}
@@ -138,7 +134,6 @@ fetch(url)
 .then(data=>{
     // num=random()
     // console.log(num)
-    console.log(data)
     let dato=data.results[nRandom]
     crearPregunta(dato)
     validarPregunta(dato)

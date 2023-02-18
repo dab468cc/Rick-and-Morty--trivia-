@@ -1,0 +1,1 @@
+-no me fue posible tomar el nombre desde el input de inicio.

@@ -1,13 +1,13 @@
 
 // SWIPER
 let swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 
 
@@ -32,7 +32,6 @@ let nombre='juan'
 localStorage.setItem('usuario',nombre)
 
 let usuarios=JSON.parse(localStorage.getItem('usuarios'))
-console.log(usuarios)
 
 // function crearTabla(array){
 //   const contenedorUsuarios=document.querySelector('#contUsuarios')
@@ -44,21 +43,21 @@ console.log(usuarios)
 //     </tr>
 // `
 //   });  
-  
+
 // }
 function crearTabla(array){
-  const contenedor = document.querySelector('#contUsuarios')
-  array.forEach(array =>{
-  const linea = document.createElement("tr")
-  linea.className="lineaUsuario"
-  // console.log(card)
-  linea.innerHTML=`
-  <td>${array.nombre}</td>  
-  <td>${array.puntos}</td>
-  `
-  contenedor.appendChild(linea)
-  
-  
-  });
-  }
+const contenedor = document.querySelector('#contUsuarios')
+array.forEach(array =>{
+const linea = document.createElement("tr")
+linea.className="lineaUsuario"
+// console.log(card)
+linea.innerHTML=`
+<td>${array.nombre}</td>  
+<td>${array.puntos}</td>
+`
+contenedor.appendChild(linea)
+
+
+});
+}
 crearTabla(usuarios)

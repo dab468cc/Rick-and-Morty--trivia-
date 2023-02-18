@@ -88,8 +88,11 @@ body {
   margin-bottom: 3px;
   font-size: 15px;
 }
-.registro input.boton {
-  margin-top: 15px;
+.registro button {
+  margin-top: 5px;
+}
+.registro button a {
+  text-decoration: none;
 }
 
 table {
